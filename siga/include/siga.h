@@ -4,13 +4,18 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+
 #include "config.h"
 #include "estudante.h"
 
+using namespace std;
+
+
+typedef enum {BUBBLESORT, INSERTIONSORT, SELECTIONSORT } sorting_method;
+
 class Siga
 {
-    typedef enum {BUBBLESORT, INSERTIONSORT, SELECTIONSORT } sorting_method;
+    
     public:
         Siga(string arquivo_estudante);
         void CadastraEstudante(Estudante est);
@@ -22,8 +27,8 @@ class Siga
 
         // TODO: Ordenação de Dados
         void ImportCSVData(string arquivo_csv);
-        void SalvarListaOrdendaEstudantesPorNome(std::string arquivo_txt, sorting_method method);
-        void SalvarListaOrdenadaEstudantesPorIRAPorCurso(std::string arquivo_txt, sorting_method method);
+        void SalvarListaOrdendaEstudantesPorNome(string arquivo_txt, sorting_method method);
+        void SalvarListaOrdenadaEstudantes(string arquivo_txt);
         ~Siga();
     private:
         // atributos

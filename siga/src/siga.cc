@@ -99,7 +99,7 @@ void Siga::SalvaListaEstudanteEmTexto(string arquivo_txt)
     }
 
     //Cria um vetor de alunos
-    Estudante estudante = Estudante()
+    Estudante estudante;
         
     //Salva a primeira linha
     arq << "Matricula;Nome;Ano de Ingresso;Curso;IRA" << endl;
@@ -163,16 +163,25 @@ int Siga::ObterNumeroEstudantesArmazenados()
 }
 
 
-void Siga::ImportCSVData(std::string file)
+void Siga::ImportCSVData(string file)
 {
-    // Abrir um arquivo .csv com a seguinte formatação:
+    cout << "Importando dados do arquivo " << file << endl;
+    int n_importados = 0; 
+
+    // TODO: 
+    // Abra um arquivo .csv com a seguinte formatação:
     // Matricula;Nome;Ano de Ingresso;Curso;IRA
     // Para cada linha do arquivo, criar um objeto Estudante e escrever no arquivo binário.
 
+    // Atualize o numero de registros no binário.
+    // Imprima o numero de estudantes importados:
+    cout << "Importacao concluida: " << n_importados << " novos alunos cadastrados" << endl;
+     
+    
 }
 
 
-void Siga::SalvarListaOrdendaEstudantesPorNome(std::string arquivo_txt, sorting_method method)
+void Siga::SalvarListaOrdendaEstudantesPorNome(string arquivo_txt, sorting_method method)
 {
     // Iremos aplicar a ordenação na memoria, para isso faca:
     // 1. Ler todos os dados do arquivo binário colocandos em um vetor
@@ -195,28 +204,16 @@ void Siga::SalvarListaOrdendaEstudantesPorNome(std::string arquivo_txt, sorting_
     // 3. Escrever o vetor ordenado no arquivo ascii 
 
 }
-Siga::SalvarListaOrdenadaEstudantesPorIRAPorCurso(std::string arquivo_txt, sorting_method method)
+
+void Siga::SalvarListaOrdenadaEstudantes(std::string arquivo_txt)
 {
     // Iremos aplicar a ordenação na memoria, para isso faca:
     // 1. Ler todos os dados do arquivo binário colocandos em um vetor
-    // 2. Ordenar o vetor usando o metodo de ordenação escolhido:
-    //    - Ordenar por Curso e
-    //    - Ordenar por IRA
-    switch(method){
-        case BUBBLESORT:
-            // chame a(s) função(ões) aqui
-            break;
-        case INSERTIONSORT:
-             // chame a(s) função(ões) aqui
-            break;
-        case SELECTIONSORT:
-             // chame a(s) função(ões) aqui
-            break;
-        default:
-           cout << "metodo de ordenação não encontrado" << endl;
-            break;
-    }
-    // 3. Escrever o vetor ordenado no arquivo ascii 
+    // 2. Ordenar o vetor usando a seguinte sequencia:
+    //    - Ordenar por Curso 
+    //    - Ordenar por IRA (decrescente)
+    //    - Ordene  por nome (crescente)
+    // 3. Escrever o vetor ordenado no arquivo ASCII 
 
 }
 
