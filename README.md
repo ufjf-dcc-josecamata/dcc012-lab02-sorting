@@ -9,9 +9,9 @@ compreender os principais conceitos por tras dessas métodos.
 ## 📝 Métodos de Ordenação Básicos:
 
 Os métodos básicos que iremos abordar nesta atividade são: 
- - método  da bolha
- - método  da seleção
- - método  da inserção 
+ - [Método da Bolha](https://pt.wikipedia.org/wiki/Bubble_sort)
+ - [Método  da seleção](https://pt.wikipedia.org/wiki/Selection_sort)
+ - [Método  da inserção](https://pt.wikipedia.org/wiki/Insertion_sort) 
  
 ## O que deve ser feito? 
 
