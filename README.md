@@ -7,7 +7,7 @@ Os métodos abordados nesta atividade são:
  - método  da inserção 
  - mergesort 
 
-Esse métodos deve ser implementados no arquivo sort.h.
+Esse métodos deve ser implementados no arquivo [sort.h].
 
 Três novos métodos da classe Siga tamvém deve ser implementados, sendo eles:
 
