@@ -42,6 +42,17 @@ cmake --build build
 ...
 
 ```
+
+## Como seu código será avaliado?
+
+Seu código irã passar por um sistema de autocorreção onde algumas funcionalidades serão testadas.
+Passar em todos testes é importante pois indica que você está no caminha certo. No entanto,
+outros aspectos pocem afetar a sua nota, a saber:
+ - código desorganizado e/ou sem documentação/comentários
+ - vazamentos de memoria
+ - Implementação ineficiente
+
+
 ## 📝 Procure saber mais...
 
 
