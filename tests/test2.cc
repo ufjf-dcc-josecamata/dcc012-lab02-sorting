@@ -4,7 +4,13 @@
 int main(int argc, char *argv[])
 {
 
+    if(argc != 2)
+    {
+        cout << "Usage: " << argv[0] << " <output_file>" << endl;
+        return 1;
+    }
     Siga siga("dataset.bin");
-    siga.SalvarListaOrdendaEstudantesPorNome("output/test2.csv", BUBBLESORT);
+    siga.SalvarListaOrdendaEstudantesPorNome(argv[1], BUBBLESORT);
+    return 0;
 
 }
