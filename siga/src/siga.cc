@@ -180,7 +180,6 @@ void Siga::ImportCSVData(string file)
     
 }
 
-
 void Siga::SalvarListaOrdendaEstudantesPorNome(string arquivo_txt, sorting_method method)
 {
     // Iremos aplicar a ordenação na memoria, para isso faca:
@@ -201,7 +200,8 @@ void Siga::SalvarListaOrdendaEstudantesPorNome(string arquivo_txt, sorting_metho
            cout << "metodo de ordenação não encontrado" << endl;
             break;
     }
-    // 3. Escrever o vetor ordenado no arquivo ascii 
+    // 3. Escrever o vetor ordenado no arquivo csv:
+    //    matricula;nome;ano de ingresso;curso;IRA
 
 }
 
@@ -210,10 +210,11 @@ void Siga::SalvarListaOrdenadaEstudantes(std::string arquivo_txt)
     // Iremos aplicar a ordenação na memoria, para isso faca:
     // 1. Ler todos os dados do arquivo binário colocandos em um vetor
     // 2. Ordenar o vetor usando a seguinte sequencia:
-    //    - Ordenar por Curso 
-    //    - Ordenar por IRA (decrescente)
-    //    - Ordene  por nome (crescente)
-    // 3. Escrever o vetor ordenado no arquivo ASCII 
+    //    - Ordenar por nome 
+    //    - Ordenar por curso
+    // Observação: escolha metodos que sejam estaveis na segunda chamada de ordenação.
+    // 3. Escrever o vetor ordenado no arquivo csv 
+    //    matricula;nome;ano de ingresso;curso;IRA
 
 }
 

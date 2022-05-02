@@ -3,7 +3,7 @@
 
 
 template <typename T>
-void bubble_sort(T* array, int size, bool (*compare)(T, T))  
+void bubble_sort(T* array, int size, bool (*compare)(T&, T&))  
 {
     // TODO: Implementação do Bubble Sort
      
@@ -11,14 +11,14 @@ void bubble_sort(T* array, int size, bool (*compare)(T, T))
 }
 
 template <typename T>
-void insert_sort(T* array, int size,  bool (*compare)(T, T))
+void insert_sort(T* array, int size,  bool (*compare)(T&, T&))
 {
     // TODO: Implementação do Insert Sort 
 }
 
 
 template <typename T>
-void selection_sort(T* array, int size, bool (*compare)(T, T))
+void selection_sort(T* array, int size, bool (*compare)(T&, T&))
 {
     // TODO: Implementação do selection Sort 
 }
