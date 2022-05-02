@@ -3,6 +3,8 @@
 using namespace std;
 
 #include "siga.h"
+#include "sort.h"
+
 
 Siga::Siga(string arquivo_dados_estudante)
 {
