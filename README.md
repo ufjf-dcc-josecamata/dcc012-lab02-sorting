@@ -10,8 +10,8 @@ compreender os principais conceitos por tras dessas métodos.
 
 Os métodos básicos que iremos abordar nesta atividade são: 
  - [Método da Bolha](https://pt.wikipedia.org/wiki/Bubble_sort)
- - [Método  da seleção](https://pt.wikipedia.org/wiki/Selection_sort)
- - [Método  da inserção](https://pt.wikipedia.org/wiki/Insertion_sort) 
+ - [Método da Seleção](https://pt.wikipedia.org/wiki/Selection_sort)
+ - [Método da Inserção](https://pt.wikipedia.org/wiki/Insertion_sort) 
  
 ## O que deve ser feito? 
 
