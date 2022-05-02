@@ -6,10 +6,15 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    if(argc != 3)
+    {
+        cout << "Usage: " << argv[0] << " <input_file> <output_file>" << endl;
+        return 1;
+    }
 
     Siga siga("dataset.bin");
-    siga.ImportCSVData("input/siga3000.csv");
-    siga.SalvarListaOrdenadaEstudantes("output/test8.csv");
+    siga.ImportCSVData(argv[1]);
+    siga.SalvarListaOrdenadaEstudantes(argv[2]);
 
     return 0;
 

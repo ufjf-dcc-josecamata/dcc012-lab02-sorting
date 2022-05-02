@@ -31,6 +31,8 @@ class Siga
         void SalvarListaOrdenadaEstudantes(string arquivo_txt);
         ~Siga();
     private:
+
+        Estudante* build_vector_from_file();
         // atributos
         string   arquivo_nome;
         fstream  file_stream;
