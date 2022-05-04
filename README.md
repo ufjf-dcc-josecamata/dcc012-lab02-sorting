@@ -37,11 +37,13 @@ Novamente, os detalhes do que deve ser implementado, encontra-se no arquivo [sig
 ```
 cmake -B build 
 cmake --build build 
-./build/tests/test1
-./build/tests/test2
+./build/tests/test1 tests/input/siga1000.csv
 ...
 
 ```
+
+Veja os codigos dos testes para detalhes. Alguns testes, esperam arquivos de entradas e/ou saída 
+como argumento na linha comando!
 
 ## Como seu código será avaliado?
 
@@ -53,7 +55,6 @@ outros aspectos pocem afetar a sua nota, a saber:
  - Implementação ineficiente
 
 
-## 📝 Procure saber mais...
 
 
 
